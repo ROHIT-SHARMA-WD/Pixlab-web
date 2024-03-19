@@ -1,172 +1,231 @@
 /* font family import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    color: rgb(0, 0, 0);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 /* ///// utility class ////*/
-:root{
-    --font-first-color:black;
-    --font-light-color:#8d8d8d;
-    --border:2px solid red;
+:root {
+  --font-first-color: black;
+  --font-light-color: #8d8d8d;
+  --border: 2px solid red;
 }
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-h1{
-    font-size: 4vw;
-    font-weight: 700;
-}
-h2{
-    font-size: 2.5rem;
-    font-weight:550;
-}
-h3{
-    font-size: 2rem;
-    font-weight: 550;
-}
-.light-text{
-    text-transform: uppercase;
-    font-size:  15px;
-    font-weight: 300;
-}
-button{
-    padding: 0.7rem 1.7rem;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    /* font-size: 16px; */
-    text-transform: capitalize;
-}
-/* end utility calss */
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4.5vw;
+  font-weight: 800;
+  /* line-height: 70px; */
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 550;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.light-text {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+button {
+  padding: 0.7rem 1.7rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* font-size: 16px; */
+  text-transform: capitalize;
+}
+
+/* end utility calss */
 
 /* scrolling bar */
 /* width */
 ::-webkit-scrollbar {
-    width: 0.6em;   
+  width: 0.6em;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:#000000;
-    border-radius: 10px;
+  background: #000000;
+  border-radius: 10px;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
+  background: #b30000;
 }
- /*end scroll bar  */
+
+/*end scroll bar  */
 
 /* body tag */
 body {
-    width: 100%;
-    height: fit-content;
-    background-color:white;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
 }
 
 /* //////  main contaner ///// */
 .main {
-    width: 90vw;
-    margin: 0 auto;
-    height: 2000px;
-    /* border: 1px solid red; */
+  width: 90vw;
+  margin: 0 auto;
+  height: 2000px;
+  /* border: 1px solid red; */
 }
+
 /* /// main contaner ended hear ///// */
 
-
-
-
-
-
 /* /////////// hero section [1]  //////////// */
-.main .hero-section{
-    width: 100%;
-    /* background-color: black; */
+.main .hero-section {
+  width: 100%;
+  border: var(--border);
 }
-/* header */
-.hero-section header{
-    justify-content: space-between;
-    height: 12vh;
-}
-header .logo{
-    width: 18%;
-}
-.logo img{
-    width: 100%;
-}
-header nav ul{
-    gap: 20px;
-}
-ul li a{
-    font-size: 1.2vw;
-    text-transform: capitalize;
-    font-weight:400;
-}
-ul>li>a.bold{
-    font-weight: 700;
-}
-header .header-button{
-    gap: 10px;
-    width: fit-content;
-}
-.header-button button:nth-child(1){
-    text-transform: none;
-    color: black;
-    background-color: transparent;
-}
-.header-button button:nth-child(2){
-    text-transform: none;
-    background-color: orangered;
-    color: azure;
-}
-/* hero-contantarea */
-.hero-section .hero-contantarea{
-    width: 100%;
-    height: 80vh;
-}
-/* hero ca text */
-.hero-contantarea .hero-ca-text{
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    align-items: baseline;
-    gap:40px;
-}
-.hero-ca-text p{
-    font-size: 1.5vw;
-    font-weight: 400;
-}
-.hero-ca-text .hero-buttons {
-    gap: 10px;
-}
-.hero-buttons button:nth-child(1){
-    font-size: 1rem;
-    text-transform: capitalize;
-    background-color: orangered;
-    padding: 0.8rem 3rem;
-    color: azure;
-}
-.hero-buttons button:nth-child(2){
-    font-size: 1rem;
-    padding:0.8rem 3rem;
-    text-transform: none;
-    text-transform: capitalize;
-    color: black;
-    background-color: transparent;
-}
-/* hero ca img */
-.hero-contantarea .hero-ca-img{
-    width: 50%;
-    height: 100%;
-}
-/* /////////// hero section [1] ended  //////////// */
 
+/* header */
+.hero-section header {
+  justify-content: space-between;
+  height: 12vh;
+  padding: 50px 0px 30px 0px;
+}
+
+header .logo {
+  width: 18%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+header nav ul {
+  gap: 20px;
+}
+
+ul li a {
+  font-size: 1.2vw;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+ul > li > a.bold {
+  font-weight: 700;
+}
+
+header .header-button {
+  gap: 10px;
+  width: fit-content;
+}
+
+.header-button button:nth-child(1) {
+  text-transform: none;
+  color: black;
+  background-color: transparent;
+}
+
+.header-button button:nth-child(2) {
+  text-transform: none;
+  background-color: orangered;
+  color: azure;
+}
+
+/* hero-contantarea */
+.hero-section .hero-contantarea {
+  width: 100%;
+  height: fit-content;
+}
+
+/* hero ca text */
+.hero-contantarea .hero-ca-text {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 40px;
+  padding: 7vh 0px;
+}
+
+.hero-ca-text p {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.hero-ca-text .hero-buttons {
+  gap: 20px;
+}
+
+.hero-buttons button:nth-child(1) {
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: orangered;
+  color: azure;
+}
+
+.hero-buttons button:nth-child(2) {
+  font-size: 1rem;
+  text-transform: none;
+  text-transform: capitalize;
+  color: black;
+  background-color: transparent;
+}
+
+/* hero ca img */
+.hero-contantarea .hero-ca-img {
+  width: 50%;
+  height: 100%;
+  /* border: var(--border); */
+  position: relative;
+  padding: 7vh 0px;
+}
+
+.hero-ca-img img {
+  width: 410px;
+  position: absolute;
+  transform: rotate(0deg) translateX(-35px) translateY(-50px);
+}
+
+.hero-ca-img .circle {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  box-shadow: 12px -20px 150px 50px rgba(0, 0, 0, 0.050);
+}
+
+.hero-ca-img > .h-boy {
+  width: 361px;
+  height: 371px;
+  z-index: 5;
+  transform: translateX(-19px) translateY(-31px);
+}
+
+.circle::after {
+  content: "";
+  border: 1px solid red;
+  width: 260px;
+  height: 65px;
+  border-radius: 10px;
+  background-color: aqua;
+  position: absolute;
+  left: -70%;
+  top: -20%;
+}
+
+/* /////////// hero section [1] ended  //////////// */
