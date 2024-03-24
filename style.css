@@ -25,7 +25,7 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 8vh;
   font-weight: 800;
   color: #020115;
 }
@@ -49,19 +49,19 @@ h3 {
 }
 
 .button {
-  padding:15px 50px;
+  padding: 15px 50px;
   font-size: 20px;
   font-weight: 400;
-  cursor:pointer;
+  cursor: pointer;
   border: none;
   outline: none;
   border-radius: 6px;
   text-transform: capitalize;
-  background-color:#ff6f00;
+  background-color: #ff6f00;
   color: white;
 }
-/* end utility calss */
 
+/* end utility calss */
 
 
 /* scrolling bar */
@@ -69,83 +69,187 @@ h3 {
 ::-webkit-scrollbar {
   width: 0.6em;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 4px;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #8d8d8d;
 }
+
 /*end scroll bar  */
 
-
 /*// body  // */
-body{
+body {
   width: 100%;
-  height: 1000px;
+  height: fit-content;
 }
+
 /* // body ended hear // */
- 
 
 /* /// main contaner  /// */
-  .main{
-    background: #000;
-    max-width:1600px;
-    margin: 0 auto;
-    height: 100%;
-  }
+.main {
+  /* background: #000; */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 /* /// main contaner ended hear  /// */
 
 
-
 /* /// header  /// */
-  .main header{
-    background-color: #b59d8b;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5vh 2vh;
-    justify-content: space-between;
-  }
-  /* logo */
-  .logo{
-    width: 15%;
-    height: 100%;
-  }
-  .logo img{
-    width: 100%;
-  }
-  /* nav */
-  nav ul{
-    gap: 40px;
-  }
-  nav ul li a{
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size:1.2vw;
-  }
-  /* buttons */
-  .header-buttons{
-    height: 100%;
-    gap: 8px;
-  }
-  .header-buttons button:nth-child(1){
-    background: transparent;
-    color: #000;
-    text-transform: none;
-    font-size: 0.9rem;
-    padding: 10px 25px;
-  }
-  .header-buttons button:nth-child(2){
-    padding: 10px 25px;
-    font-size: 0.9rem;
-    text-transform: none;
-  }
-/* /// header endedhear  /// */
+.main header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5vh 2.5vw;
+  justify-content: space-between;
+}
 
+/* logo */
+.logo {
+  width: 15%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* nav */
+nav ul {
+  gap: 40px;
+}
+
+nav ul li a {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+/* buttons */
+.header-buttons {
+  height: 100%;
+  gap: 8px;
+}
+
+.header-buttons button:nth-child(1) {
+  background: transparent;
+  color: #000;
+  text-transform: none;
+  font-size: 0.9rem;
+  padding: 10px 25px;
+}
+
+.header-buttons button:nth-child(2) {
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+/* /// header ended hear  /// */
 
 
 /* /// hero section [1]  /// */
+.main .hero-section {
+  padding: 0vh 2.5vw;
+  width: 100%;
+  height: 80vh;
+}
+
+/* hero-text */
+.hero-section .hero-text {
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: start;
+}
+
+.hero-section .hero-text p {
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+
+.hero-section .hero-text .hero-buttons {
+  gap: 20px;
+}
+
+.hero-section .hero-text .hero-buttons button:nth-child(2) {
+  background-color: transparent;
+  color: #000;
+}
+
+/* hero img */
+.hero-section .hero-img {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  padding-left: 75px;
+}
+
+/* img */
+.hero-section .hero-img>span {
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-section .hero-img span img {
+  width: 400px;
+}
+
+.hero-section .hero-img .group {
+  transform: translate(-17px, -30px);
+  z-index: 1;
+}
+
+.hero-section .hero-img .group img {
+  width: 435px;
+}
+
+/* boxs */
+h5>i {
+  color: yellow;
+}
+
+/* box [1] */
+.hero-section .hero-img .img-upear {
+  position: absolute;
+  width: 300px;
+  height: 66px;
+  transform: translate(-135px, -135px);
+  z-index: 0;
+  border-radius: 8px;
+  box-shadow: 00px 25px 75px 0px rgba(0, 0, 0, 0.35);
+}
+
+.hero-section .hero-img .img-upear .img-up-icon {
+  width: 25%;
+  height: 100%;
+  font-size: 2.5rem;
+}
+
+.hero-section .hero-img .img-upear .img-up-remaning {
+  width: 75%;
+  height: 100%;
+  justify-content: start;
+}
+
+/* box [2] */
+.hero-section .hero-img .img-lower {
+  position: absolute;
+  width: 315px;
+  height: 62px;
+  transform: translate(-175px, 120px);
+  z-index: 0;
+  border-radius: 8px;
+  justify-content: start;
+  padding-left: 15px;
+  box-shadow: 00px 25px 75px 0px rgba(0, 0, 0, 0.40);
+}
 
 /* /// hero section [1] ended hear  /// */
