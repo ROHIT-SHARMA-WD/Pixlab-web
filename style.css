@@ -13,7 +13,7 @@
 
 /* ///// utility class ////*/
 :root {
-  --font-first-color: black;
+  --pading: 0px 3vw;
   --font-light-color: #8d8d8d;
   --border: 2px solid red;
 }
@@ -31,21 +31,25 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 6vh;
+  font-weight: 600;
   color: #020115;
+  text-transform: capitalize;
+  margin-top: 0.8rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 4.5vh;
   font-weight: 550;
+  text-transform: capitalize;
 }
 
 .light-text {
   text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
   color: grey;
+  letter-spacing: 12px;
 }
 
 .button {
@@ -93,7 +97,6 @@ body {
 
 /* /// main contaner  /// */
 .main {
-  /* background: #000; */
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -102,11 +105,13 @@ body {
 /* /// main contaner ended hear  /// */
 
 
+
+
 /* /// header  /// */
 .main header {
   width: 100%;
   margin: 0 auto;
-  padding: 1.5vh 2.5vw;
+  padding: 1.5vh 3vw;
   justify-content: space-between;
 }
 
@@ -154,9 +159,12 @@ nav ul li a {
 /* /// header ended hear  /// */
 
 
+
+
+
 /* /// hero section [1]  /// */
 .main .hero-section {
-  padding: 0vh 2.5vw;
+  padding: var(--pading);
   width: 100%;
   height: 80vh;
 }
@@ -216,6 +224,10 @@ h5>i {
   color: yellow;
 }
 
+h5>span {
+  color: gray;
+}
+
 /* box [1] */
 .hero-section .hero-img .img-upear {
   position: absolute;
@@ -253,3 +265,161 @@ h5>i {
 }
 
 /* /// hero section [1] ended hear  /// */
+
+
+
+
+
+
+/* /// service section [2] /// */
+.service-section {
+  padding: var(--pading);
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* service-heading */
+.service-section .service-heading {
+  width: 100%;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: end;
+}
+
+/* service-editing */
+.service-section .services-item {
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+}
+
+.service-section .services-item div {
+  width: 25vw;
+  height: fit-content;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 4vh 2.5vw;
+  box-shadow: 00px 25px 75px 0px rgba(0, 0, 0, 0.10);
+}
+
+.service-section .services-item div>i {
+  font-size: 2.5rem;
+}
+
+.service-section .services-item div>p {
+  font-weight: 550;
+  font-size: 1.2vw;
+}
+
+.service-section .services-item div>button {
+  font-size: 12px;
+  padding: 13px 35px;
+}
+
+/* service-explore  */
+.service-section .service-explore {
+  width: 100%;
+  height: fit-content;
+}
+
+.service-section .service-explore .explore-text {
+  width: 40%;
+  height: 350px;
+  position: relative;
+
+}
+
+.service-section .service-explore .explore-text h4 {
+  font-size: 4vh;
+  margin-bottom: 30px;
+}
+
+.service-section .service-explore .explore-text p {
+  color: gray;
+  font-weight: 400;
+}
+
+.service-section .service-explore .explore-text button {
+  color: black;
+  font-size: 1.1rem;
+  padding: 8px 40px;
+  border-radius: 30px;
+  border: 2px solid gainsboro;
+  background: transparent;
+  position: absolute;
+  bottom: 10px;
+}
+
+.service-section .service-explore .explore-video {
+  width: 60%;
+  height: fit-content;
+  height: 350px;
+}
+
+.service-section .service-explore .explore-video img {
+  width: 100%;
+  height: 100%;
+}
+
+/* /// service section [2] ended hear /// */
+
+
+
+
+
+
+/* /// testmonials section [3] /// */
+.testmonials-section {
+  margin-top: 50px;
+  padding: var(--pading);
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.testmonials-section .testmonials-heading {
+  width: 100%;
+  height: fit-content;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.testmonials-section .t-s-clients {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  gap: 50px 65px;
+  grid-template-columns: 390px 390px;
+  justify-content: center;
+}
+
+.testmonials-section .t-s-clients>div {
+  border-radius: 10px;
+  height: 210px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.testmonials-section .t-s-clients>div p {
+  font-weight: 450;
+  line-height: 28px;
+}
+
+.testmonials-section .t-s-clients>div span {
+  color: rgb(156, 156, 156);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* /// testmonials section [2] ended hear /// */
